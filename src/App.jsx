@@ -1,18 +1,19 @@
 import React from "react";
 import Nav from "./component/Nav.jsx";
-import Hero from "./component/Hero.jsx";
-import House from "./component/House.jsx";
-import Review from "./component/Review.jsx";
-import Footer from "./component/Footer.jsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Quote from "./component/Quote.jsx";
+import HomePage from "./component/HomePage.jsx";
 
 function App() {
   return (
     <>
-      <Nav />
-      <Hero />
-      <House />
-      <Review />
-      <Footer />
+      <BrowserRouter>
+        <Nav />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/quote" element={<Quote />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

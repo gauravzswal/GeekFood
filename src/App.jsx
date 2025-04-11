@@ -6,19 +6,20 @@ import HomePage from "./component/home/HomePage.jsx";
 import QuoteData from "./component/Quote/QuoteData.js";
 
 function App() {
-  {console.log(QuoteData)}
+  {
+    console.log(QuoteData);
+  }
   return (
     <>
       <BrowserRouter>
         <Nav />
         <Routes>
-          <Route path="/" element={<HomePage  />} />
-          <Route path="/quote" element={<Quote QuoteData={QuoteData} />} />
+          <Route path="/quote" element={<HomePage />} />
+          <Route path="/" element={<Quote QuoteData={QuoteData} />} />
         </Routes>
       </BrowserRouter>
     </>
   );
-  
 }
 
 export default App;

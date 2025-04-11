@@ -1,10 +1,9 @@
 import React from "react";
-import girl from "../../public/girlreview.png";
+import girl from "../../../public/girlreview.png";
 
 const Review = () => {
   return (
     <section className="flex mx-16 gap-20 flex-wrap">
-        
       <div className="w-[25%] ">
         <div className="bg-[#F9FAFB] p-5 rounded-lg  mb-3 shadow-inner">
           <p className="text-[#374177]">
